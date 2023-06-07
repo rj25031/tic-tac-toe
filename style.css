@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+}
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 100px;
+}
+.main{
+    display: grid;
+    margin-left: 470px;
+    margin-top: 80px;
+}
+.x{
+ background: black;
+ 
+}
+.o{
+border: 2px;
+border-radius: 50px;
+background: yellow;
+}
+table{
+    margin: auto;
+    margin-top: 45px;
+}
+#player1{
+    margin-left: 450px;
+    display: inline-block;
+}
+#player2{
+    display: inline-block;
+    margin-left: 100PX;
+}
+.back{
+    background-color: beige;
+}
