@@ -5,39 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Tic Tac Toe</title>
 </head>
-<div id="player1" class="back">
- <h1>
-    Player1
- </h1>
-</div>
-<div id="player2" >
-    <h1>
-       Player2
-    </h1>
-   </div>
-<table>
-    <tbody>
-        <tr>
-        <td class="box"></td>
-        <td class="box"></td>
-        <td class="box"></td>    
-        </tr>
-        <tr>
-            <td class="box"></td>
-            <td class="box"></td>
-            <td class="box"></td>
-        </tr>
-        <tr>
-            <td class="box"></td>
-            <td class="box"></td>
-            <td class="box"></td>
-        </tr>
-    </tbody>
-</table>
-    <script src="script.js"></script>
+
+<body>
+    <div class="split">
+        <div class="left">
+            
+        <div class="outer">
+            <div id="main">
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+            </div>
+            <div class="reset">
+                <button id="btn">Clear</button>
+            </div>
+        </div>
+        
+    </div>
+        <div class="right">
+            <div id="player">
+                <div class="players back">
+                    <h1>
+                        Player 1
+                    </h1>
+                </div>
+                <div class="players">
+                    <h1>
+                        Player 2
+                    </h1>
+                </div>
+            </div>
+            <div class="move">
+                <h1 id="ymove">
+                    Player 1 : 0
+                </h1>
+                <h1 id="omove">
+                    Player 2 : 0
+                </h1>
+            </div>
+            <div class="clebration">
+                <div class="winner none">
+                    <h1>
+                        Player 1  Won 
+                    </h1>
+                    <img src="https://media.giphy.com/media/lnlAifQdenMxW/giphy.gif" alt="Win GIF" loop="true">
+                </div>
+                <div class="lose none">
+                    <h1>
+                        Player 2 won 
+                    </h1>
+                    <img src="https://media.giphy.com/media/lnlAifQdenMxW/giphy.gif" alt="Lose GIF" loop="true">
+                </div>
+                <div class="tied none">
+                    <h1>
+                        Tie
+                    </h1>
+                    <img src="https://media.giphy.com/media/gfsQffBnuc6e096brx/giphy.gif" alt="Tie Gif">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
