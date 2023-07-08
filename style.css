@@ -5,12 +5,19 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #0e5e78;
+    background-image: url('back.jpg');
     text-align: center;
 }
+
 .split{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    width: 90%;
+    margin-top: 50px;
 }
 .box{
     display: inline-block;
@@ -31,12 +38,12 @@ body{
     display: inline-block;
     width: 49%;
 }
-.left {
-    width: 50%;
-}
 .right {
-    width: 50%;
     font-size: 1.25rem;
+}
+.left,.right{
+    width: 50%;
+    padding: 35px;
 }
 #player{
     width: 100%;
@@ -71,7 +78,7 @@ body{
   .win{
     background-color: #A2FF86;
   }
-  #btn {
+  .btn {
     font-size: 40px;
     margin: 20px;
     background: #2984ff;
@@ -79,9 +86,11 @@ body{
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+    padding: 10px;
 }
-#btn:active{
+.btn:active{
     transform: scale(0.95);
+    box-shadow: 2px 2px 2px black;
 }
 .tie{
     background-color: rgb(216, 71, 71);
@@ -89,15 +98,78 @@ body{
 .move{
     text-align: start;
 }
+
+.main{
+    display: inline-flex;
+    flex-direction: row;
+    width: 90%;
+    height: 90%;
+    margin-top: 50px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.tag {
+    font-size: 3rem;
+    text-shadow: 5px 5px 1px black;
+    width: 50%;
+}
+#tic{
+    color: #e1a82d;
+}
+#tac{
+    color: aliceblue;
+    
+}
+#toe{
+    color: #00bea6;
+
+}
+.option{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p{
+    border: 2px solid;
+width: 60%;
+font-size: 2.2rem;
+background-color: #11213a;
+border-radius: 15px;
+padding: 30px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.p:active{
+    transform: scale(0.95);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.pose{
+    position: absolute;
+    bottom: 10px;
+    left: 650px;
+}
 .none{
     display: none;
 }
 
 
+
+
+
 @media only screen and (max-width:768px){
     .split{
-        display: flex;
+        display: inline-flex;
         flex-direction: column-reverse;
+        box-shadow: none;
+        background-color: none;  
+        backdrop-filter: none;
+        width: 90%;
     }
     .right{
         width: 100%;
@@ -105,5 +177,15 @@ body{
     #ymove,#omove{
         display: inline-block;
         width: 49%;
+    }
+    .pose{
+        left: 100px;
+        bottom: -320px;
+    }
+    .main{
+        width: 130%;
+    }
+    .none{
+        display: none;
     }
 }
