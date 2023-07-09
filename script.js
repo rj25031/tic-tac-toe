@@ -60,7 +60,6 @@ function player_2() {
   main.classList.add('none')
   mainG.classList.remove('none')
   btp.classList.remove('none')
-  btp.classList.add('pose')
   user = ['player 1', 'player 2']
   pc1.innerHTML = ` ${user[0]} : ${pwinCount1}`;
   pc2.innerHTML = ` ${user[1]} : ${pwinCount1}`;
@@ -141,7 +140,6 @@ btp.addEventListener('click', () => {
   resetHandler();
   pwinCount1 = 0;
   pwinCount2 = 0;
-  btp.classList.remove('pose')
 })
 
 

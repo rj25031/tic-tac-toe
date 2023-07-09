@@ -149,11 +149,6 @@ a{
     text-decoration: none;
     color: inherit;
 }
-.pose{
-    position: absolute;
-    bottom: 10px;
-    left: 650px;
-}
 .none{
     display: none;
 }
@@ -169,7 +164,7 @@ a{
         box-shadow: none;
         background-color: none;  
         backdrop-filter: none;
-        width: 90%;
+        width: 600px;
     }
     .right{
         width: 100%;
@@ -177,10 +172,6 @@ a{
     #ymove,#omove{
         display: inline-block;
         width: 49%;
-    }
-    .pose{
-        left: 100px;
-        bottom: -320px;
     }
     .main{
         width: 130%;
