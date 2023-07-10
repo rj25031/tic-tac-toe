@@ -12,7 +12,11 @@ const pc2 = document.getElementById('omove');
 const play_1 = document.getElementById('p1')
 const play_2 = document.getElementById('p2')
 const parent = document.querySelector('.option')
-const hardMove = document.getElementById('hard');
+const hard1 = document.getElementById('hard1');
+const hard3 = document.getElementById('hard3');
+const hard4 = document.getElementById('hard4');
+const hard5 = document.getElementById('hard5');
+const hard7 = document.getElementById('hard7');
 const main = document.querySelector('.main')
 const mainG = document.querySelector('.split')
 const ps1 = 'X';
@@ -385,8 +389,16 @@ function aiHard() {
   const randomIndex = Math.floor(Math.random() * emptyBoxes.length);
   var randomBox = emptyBoxes[randomIndex];
   const userSymbol = currentMove ? ps2 : ps1;
-  if (!hardMove.classList.contains('disable')) {
-    randomBox = hardMove
+  if (!hard4.classList.contains('disable')) {
+    randomBox = hard4
+  }else if (!hard1.classList.contains('disable')){
+    randomBox = hard1
+  }else if(!hard3.classList.contains('disable')){
+    randomBox = hard3
+  }else if(!hard5.classList.contains('disable')){
+    randomBox = hard5
+  }else if(!hard7.classList.contains('disable')){
+    randomBox = hard7
   }
   for (let combination of winCombination) {
     const [a, b, c] = combination;
